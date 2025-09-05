@@ -5,7 +5,7 @@ import SecHeader from "../components/secondaryheader/secheader";
 import { Container } from "react-bootstrap";
 import SecHeader2 from "../components/secondaryheader/secheader2";
 
-export default function Profile({ users, FetchUser }) {
+export default function Profile({ users, FetchUser, BEurl }) {
     const [isLoading, setisLoading] = useState(false);
 
     useEffect(() => {
@@ -24,9 +24,10 @@ export default function Profile({ users, FetchUser }) {
                     isLoading ? (
                         <Loader />
                     ) :
-                        <ProfileData users={users} FetchUser={FetchUser} />
+                        <ProfileData users={users} FetchUser={FetchUser} BEurl={BEurl} />
                 }
             </Container>
         </>
     )
+
 }
