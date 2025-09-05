@@ -112,7 +112,7 @@ function App() {
 
   return (
     <div className="bg-light app-container">
-      <Navcomp FetchTasks={FetchTasks} srcimg="/images/logo.png" users={users} FetchCategory={FetchCategory} category={category} />
+      <Navcomp FetchTasks={FetchTasks} srcimg="/images/logo.png" users={users} FetchCategory={FetchCategory} category={category} BEurl={BEurl} />
 
       <main style={{ flex: 1 }}>
         <Routes>
