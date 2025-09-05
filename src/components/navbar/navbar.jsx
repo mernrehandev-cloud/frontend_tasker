@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 
 library.add(fas);
 
-function Navcomp({ srcimg, FetchTasks, users, FetchCategory, category }) {
+function Navcomp({ srcimg, FetchTasks, users, FetchCategory, category, BEurl }) {
 
     useEffect(() => {
         FetchTasks();
@@ -53,7 +53,7 @@ function Navcomp({ srcimg, FetchTasks, users, FetchCategory, category }) {
                                 </Dropdown>
                             </span>
 
-                            <ModalComp FetchTasks={FetchTasks} FetchCategory={FetchCategory} category={category} />
+                            <ModalComp FetchTasks={FetchTasks} FetchCategory={FetchCategory} category={category} BEurl={BEurl} />
 
                         </Nav>
                     </Navbar.Collapse>
@@ -62,5 +62,6 @@ function Navcomp({ srcimg, FetchTasks, users, FetchCategory, category }) {
         </>
     )
 }
+
 
 export default Navcomp
