@@ -88,6 +88,7 @@ function ModalComp({ FetchTasks, FetchCategory, category, BEurl }) {
             }
         } catch (error) {
             seterror(error.message || "Failed to Fetch Data")
+            console.log("error fetching status")
         }
     }
 
@@ -359,5 +360,6 @@ function ModalComp({ FetchTasks, FetchCategory, category, BEurl }) {
         </>
     );
 }
+
 
 export default ModalComp;
