@@ -40,6 +40,7 @@ export default function SignupForm({ BEurl }) {
                 // console.log(`${found.token} \n ${found.user}`);
             }
             else {
+                console.log(form);
                 settoast({ show: true, header_toast: `Signup Failed`, text: `Something went wrong`, bg: "danger", status: "circle-xmark" });
             }
         } catch (error) {
@@ -292,4 +293,5 @@ export default function SignupForm({ BEurl }) {
             < ToastAlert show={toast.show} onClose={() => settoast({ ...toast, show: false })} header_toast={toast.header_toast} bg={toast.bg} status={toast.status} text={toast.text} />
         </Container>
     )
+
 }
