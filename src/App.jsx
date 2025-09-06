@@ -42,9 +42,7 @@ function App() {
       seterror(error.message || "Failed to Fetch Data")
     }
     finally {
-      setTimeout(() => {
         setisLoading(false);
-      }, 1000);
     }
   }
 
