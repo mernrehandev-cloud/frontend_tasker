@@ -19,7 +19,7 @@ function Learning({ tasks, FetchTasks, FetchonUpdate, BEurl }) {
         setlearntasks(Learntasks);
         setTimeout(() => {
             setisLoading(false);
-        }, 700);
+        }, 1);
     }, [tasks]);
 
     return (
@@ -36,5 +36,6 @@ function Learning({ tasks, FetchTasks, FetchonUpdate, BEurl }) {
         </>
     )
 }
+
 
 export default Learning
