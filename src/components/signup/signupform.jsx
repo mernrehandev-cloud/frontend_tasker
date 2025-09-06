@@ -200,65 +200,77 @@ export default function SignupForm({ BEurl }) {
                                     </Col>
                                 </Row>
 
-                                <FloatingLabel controlId="floatingInput.password" label="Password" className="mt-4 mb-3">
-                                    <Form.Control
-                                        className="border-custom"
-                                        type="password"
-                                        name="Password"
-                                        placeholder="Password"
-                                        value={form.Password}
-                                        onChange={handleChange}
-                                        isInvalid={!!errors.Password}
-                                    />
-                                    <Form.Control.Feedback type="invalid">
-                                        {errors.Password}
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
+                                <Row>
+                                    <Col xl={6} md={6}>
+                                        <FloatingLabel controlId="floatingInput.password" label="Password" className="mt-4 mb-3">
+                                            <Form.Control
+                                                className="border-custom"
+                                                type="password"
+                                                name="Password"
+                                                placeholder="Password"
+                                                value={form.Password}
+                                                onChange={handleChange}
+                                                isInvalid={!!errors.Password}
+                                            />
+                                            <Form.Control.Feedback type="invalid">
+                                                {errors.Password}
+                                            </Form.Control.Feedback>
+                                        </FloatingLabel>
+                                    </Col>
 
-                                <FloatingLabel controlId="floatingInput.confirmpassword" label="Confirm Password" className="mt-4 mb-3">
-                                    <Form.Control
-                                        className="border-custom"
-                                        type="password"
-                                        name="ConfirmPassword"
-                                        placeholder="Confirm Password"
-                                        value={form.ConfirmPassword}
-                                        onChange={handleChange}
-                                        isInvalid={!!errors.ConfirmPassword}
-                                    />
-                                    <Form.Control.Feedback type="invalid">
-                                        {errors.ConfirmPassword}
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
+                                    <Col xl={6} md={6}>
+                                        <FloatingLabel controlId="floatingInput.confirmpassword" label="Confirm Password" className="mt-4 mb-3">
+                                            <Form.Control
+                                                className="border-custom"
+                                                type="password"
+                                                name="ConfirmPassword"
+                                                placeholder="Confirm Password"
+                                                value={form.ConfirmPassword}
+                                                onChange={handleChange}
+                                                isInvalid={!!errors.ConfirmPassword}
+                                            />
+                                            <Form.Control.Feedback type="invalid">
+                                                {errors.ConfirmPassword}
+                                            </Form.Control.Feedback>
+                                        </FloatingLabel>
+                                    </Col>
+                                </Row>
 
-                                <FloatingLabel controlId="floatingInput.SecurityQuestion" label="Security Question" className="mt-4 mb-3">
-                                    <Form.Control
-                                        className="border-custom"
-                                        type="text"
-                                        name="SecurityQuestion"
-                                        placeholder="Security Question"
-                                        value={form.SecurityQuestion}
-                                        onChange={handleChange}
-                                        isInvalid={!!errors.SecurityQuestion}
-                                    />
-                                    <Form.Control.Feedback type="invalid">
-                                        {errors.SecurityQuestion}
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
+                                <Row>
+                                    <Col xl={6} md={6}>
+                                        <FloatingLabel controlId="floatingInput.SecurityQuestion" label="Security Question" className="mt-2 mb-3">
+                                            <Form.Control
+                                                className="border-custom"
+                                                type="text"
+                                                name="SecurityQuestion"
+                                                placeholder="Security Question"
+                                                value={form.SecurityQuestion}
+                                                onChange={handleChange}
+                                                isInvalid={!!errors.SecurityQuestion}
+                                            />
+                                            <Form.Control.Feedback type="invalid">
+                                                {errors.SecurityQuestion}
+                                            </Form.Control.Feedback>
+                                        </FloatingLabel>
+                                    </Col>
 
-                                <FloatingLabel controlId="floatingInput.SecurityAnswer" label="Security Answer" className="mt-4 mb-3">
-                                    <Form.Control
-                                        className="border-custom"
-                                        type="text"
-                                        name="SecurityAnswer"
-                                        placeholder="Security Answer"
-                                        value={form.SecurityAnswer}
-                                        onChange={handleChange}
-                                        isInvalid={!!errors.SecurityAnswer}
-                                    />
-                                    <Form.Control.Feedback type="invalid">
-                                        {errors.SecurityAnswer}
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
+                                    <Col xl={6} md={6}>
+                                        <FloatingLabel controlId="floatingInput.SecurityAnswer" label="Security Answer" className="mt-2 mb-3">
+                                            <Form.Control
+                                                className="border-custom"
+                                                type="text"
+                                                name="SecurityAnswer"
+                                                placeholder="Security Answer"
+                                                value={form.SecurityAnswer}
+                                                onChange={handleChange}
+                                                isInvalid={!!errors.SecurityAnswer}
+                                            />
+                                            <Form.Control.Feedback type="invalid">
+                                                {errors.SecurityAnswer}
+                                            </Form.Control.Feedback>
+                                        </FloatingLabel>
+                                    </Col>
+                                </Row>
 
                                 <Form.Group className="mt-4 mb-3" controlId="formBasicCheckbox">
                                     <Form.Check type="checkbox" label="Remember Me" />
@@ -295,3 +307,4 @@ export default function SignupForm({ BEurl }) {
     )
 
 }
+
