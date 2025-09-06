@@ -119,8 +119,8 @@ function App() {
           <Route path="/work" element={<Work BEurl={BEurl} FetchonUpdate={FetchonUpdate} tasks={tasks} FetchTasks={FetchTasks} />} />
           <Route path="/personal" element={<Personal BEurl={BEurl} FetchonUpdate={FetchonUpdate} tasks={tasks} FetchTasks={FetchTasks} />} />
           <Route path="/learning" element={<Learning BEurl={BEurl} FetchonUpdate={FetchonUpdate} tasks={tasks} FetchTasks={FetchTasks} />} />
-          <Route path="/login" element={<Login BEurl={BEurl} />} />
-          <Route path="/register" element={<Register BEurl={BEurl} />} />
+          <Route path="/login" element={<Login BEurl={BEurl} users={users} />} />
+          <Route path="/register" element={<Register BEurl={BEurl} users={users} />} />
 
           <Route path="/profile" element={<Profile users={users} FetchUser={FetchUser} BEurl={BEurl} />} />
           <Route path="*" element={<NotFound />} />
