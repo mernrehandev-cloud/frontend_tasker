@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './secheader.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,5 +49,6 @@ function SecHeader(props) {
 
 
 export default SecHeader;
+
 
 
