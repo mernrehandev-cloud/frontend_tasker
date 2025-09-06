@@ -2,17 +2,11 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './secheader.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function SecHeader(props) {
-    const { heading, total, icon_nav
+    const { heading, total, icon_nav, keyforut
     } = props;
-
-    useEffect(() => {
-        let syntax = 12;
-        if (!total) syntax = 6;
-    }, []);
 
     return (
         <>
@@ -24,20 +18,21 @@ function SecHeader(props) {
                                 <FontAwesomeIcon icon={icon_nav} /> {heading}
                             </Col>
 
-                             <Col className="col-4 text-center d-flex justify-content-center gap-2">
+                            <Col className="col-4 text-center d-flex justify-content-center gap-2">
                                 <Link to='/login'><Button variant="primary"><FontAwesomeIcon icon="fa fa-right-to-bracket" /> Login Demo</Button></Link>
                                 <Link to='/register'><Button variant="secondary"><FontAwesomeIcon icon="fa fa-user-plus" /> Signup Demo</Button></Link>
                             </Col>
-                            
-                            {total ? (
+
+                            {total !== 0 && keyforut !== "u" ? (
                                 <Col className="col-4 text-end total-text fs-5">
                                     <span className="total-main">Total:</span> {total} Task/s
                                 </Col>
-                            ) : (
+                            ) : keyforut == "u" ? (
                                 <Col className="col-4 text-end total-text fs-5">
-                                    <span className="total-main">Total:</span> 0 Task/s
+                                    <span className="total-main">Total:</span> {total} User/s
                                 </Col>
-                            )
+                            ) :
+                                <FontAwesomeIcon icon={"loader"} />
                             }
                         </Row>
                     </Col>
@@ -47,9 +42,4 @@ function SecHeader(props) {
     );
 }
 
-
 export default SecHeader;
-
-
-
-
