@@ -36,7 +36,7 @@ export default function ProfileData({ users, FetchUser, BEurl }) {
                 settoast({ show: true, header_toast: `Update Success`, text: `Data of User ${user.Name} Successfully Updated۔`, bg: "success", status: "circle-check" });
                 setTimeout(() => {
                     FetchUser();
-                }, 1500);
+                }, 1);
             }
             else {
                 settoast({ show: true, header_toast: `Update Failed`, text: `Data of User ${user.Name} Failed to Update`, bg: "danger", status: "circle-xmark" });
@@ -327,4 +327,5 @@ export default function ProfileData({ users, FetchUser, BEurl }) {
             < ToastAlert show={toast.show} onClose={() => settoast({ ...toast, show: false })} header_toast={toast.header_toast} bg={toast.bg} status={toast.status} text={toast.text} />
         </Container >
     )
+
 }
