@@ -155,7 +155,7 @@ function ModalComp({ FetchTasks, FetchCategory, category, BEurl }) {
 
                 FetchTasks();
                 settoast({ ...toast, show: false });
-            }, 1500)
+            }, 1)
         } catch (error) {
             seterror(error.message);
         }
@@ -363,3 +363,4 @@ function ModalComp({ FetchTasks, FetchCategory, category, BEurl }) {
 
 
 export default ModalComp;
+
