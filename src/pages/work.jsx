@@ -19,7 +19,7 @@ function Work({ tasks, FetchTasks, BEurl, FetchonUpdate }) {
         setworkTasks(WorkTasks);
         setTimeout(() => {
             setisLoading(false);
-        }, 700);
+        }, 1);
     }, [tasks]);
 
 
@@ -38,5 +38,6 @@ function Work({ tasks, FetchTasks, BEurl, FetchonUpdate }) {
         </>
     )
 }
+
 
 export default Work
