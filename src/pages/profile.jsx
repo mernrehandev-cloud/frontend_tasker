@@ -13,7 +13,7 @@ export default function Profile({ users, FetchUser, BEurl }) {
 
         setTimeout(() => {
             setisLoading(false);
-        }, 700);
+        }, 1);
     }, []);
 
     return (
@@ -29,4 +29,5 @@ export default function Profile({ users, FetchUser, BEurl }) {
             </Container>
         </>
     )
+
 }
