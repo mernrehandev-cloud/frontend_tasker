@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './secheader.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function SecHeader(props) {
     const { heading, total, icon_nav
@@ -48,4 +49,5 @@ function SecHeader(props) {
 
 
 export default SecHeader;
+
 
