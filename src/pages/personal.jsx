@@ -19,7 +19,7 @@ function Personal({ tasks, FetchTasks, BEurl, FetchonUpdate }) {
         setpersTasks(PerTasks);
         setTimeout(() => {
             setisLoading(false);
-        }, 700);
+        }, 1);
     }, [tasks]);
 
     return (
@@ -36,5 +36,6 @@ function Personal({ tasks, FetchTasks, BEurl, FetchonUpdate }) {
         </>
     )
 }
+
 
 export default Personal
