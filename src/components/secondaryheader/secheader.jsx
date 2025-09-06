@@ -26,7 +26,11 @@ function SecHeader(props) {
                                 <Col className="col-6 text-end total-text fs-5">
                                     <span className="total-main">Total:</span> {total} Task/s
                                 </Col>
-                            ) : ""
+                            ) : (
+                                <Col className="col-6 text-end total-text fs-5">
+                                    <span className="total-main">Total:</span> 0 Task/s
+                                </Col>
+                            )
                             }
                         </Row>
                     </Col>
@@ -35,5 +39,6 @@ function SecHeader(props) {
         </>
     );
 }
+
 
 export default SecHeader;
